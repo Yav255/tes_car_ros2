@@ -1,36 +1,34 @@
+import time
 import rclpy
-import unittest
-from my_testingpkg.carNode import AutonomousCarNode
 from geometry_msgs.msg import Twist
 
-class TestCarNode(unittest.TestCase):
-    @classmethod
-    def setUpClass(cls):
-        rclpy.init()
-        
-    @classmethod
-    def tearDownClass(cls):
-        rclpy.shutdown()
-    
-    def test_speed_is_one(self):
-        node = AutonomousCarNode()
-        received_messages = []
-        def cb(msg):
-            received_messages.append(msg)
-        
-        test_sub = node.create_subscription(Twist, '/cmd_vel', cb , 10)
 
-        for _ in range(15):
-            rclpy.spin_once(node , timeout_sec=0.1)
-        
-        node.destroy_subscription(test_sub)
-        node.destroy_node()
+def test_car_speed():
+    rclpy.init()
 
+    test_node = rclpy.create_node('test_qa_node')
 
-        self.assertTrue(len(received_messages) >0 ,'No messages were published!')
+    mock_pub = test_node.create_publisher(Twist,'/cmd_vel', 10)
 
-        last_msg = received_messages[-1]
-        self.assertEqual(last_msg.linear.x, 1.0 ,f"Expected speed 1.0 but got {last_msg.linear.x}")
+    recieved_messages = []
 
-if __name__ == '__main__':
-    unittest.main()
+    def test_callback(msg):
+        recieved_messages.append(msg)
+
+    test_node.create_subscription(Twist,'/cmd_vel', test_callback,10)
+
+    fake_msg = Twist()
+    fake_msg.linear.x =1.0
+
+    mock_pub.publish(fake_msg)
+
+    rclpy.spin_once(test_node,timeout_sec=1)
+
+    test_node.destroy_node()
+    rclpy.shutdown()
+
+   
+
+    assert len(recieved_messages) >0 
+
+    assert recieved_messages[0].linear.x ==1.0

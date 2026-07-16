@@ -25,6 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
             'car_node = my_testingpkg.carNode:main',
+            'sensor_node = my_testingpkg.obstaclesensor:main'
         ],
     },
 )
