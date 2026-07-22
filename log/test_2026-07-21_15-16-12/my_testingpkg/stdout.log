@@ -1,0 +1,26 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+cachedir: build/my_testingpkg/.pytest_cache
+rootdir: /home/user/ros2_ws/src/my_testingpkg
+plugins: ament-pep257-0.12.14, ament-xmllint-0.12.14, ament-flake8-0.12.14, ament-copyright-0.12.14, ament-lint-0.12.14, launch-testing-1.0.13, launch-testing-ros-0.19.13, langsmith-0.5.0, anyio-4.12.0, colcon-core-0.20.1
+[1mcollecting ... [0m[1m
+collected 10 items                                                             [0m
+
+test/test_autocar_node.py [32m.[0m[32m.[0m[32m.[0m[32m                                            [ 30%][0m
+test/test_car_node.py [32m.[0m[32m                                                  [ 40%][0m
+test/test_copyright.py [33ms[0m[32m                                                 [ 50%][0m
+test/test_mock_bat.py [32m.[0m[32m                                                  [ 60%][0m
+test/test_nav_status.py [31mF[0m[31m                                                [ 70%][0m
+test/test_status.py [32m.[0m[32m.[0m[32m.[0m[31m                                                  [100%][0m
+
+=================================== FAILURES ===================================
+[31m[1m______________________________ test_battery_level ______________________________[0m
+[1m[31mtest/test_nav_status.py[0m:18: in test_battery_level
+    result = check_safety(mock_sensor.battery_level , mock_sensor)
+[1m[31mtest/test_nav_status.py[0m:8: in check_safety
+    [94mif[39;49;00m dist < [94m0.3[39;49;00m:
+[1m[31mE   TypeError: '<' not supported between instances of 'MagicMock' and 'float'[0m
+- generated xml file: /home/user/ros2_ws/src/my_testingpkg/build/my_testingpkg/pytest.xml -
+=========================== short test summary info ============================
+FAILED test/test_nav_status.py::test_battery_level - TypeError: '<' not suppo...
+[31m==================== [31m[1m1 failed[0m, [32m8 passed[0m, [33m1 skipped[0m[31m in 0.70s[0m[31m ====================[0m

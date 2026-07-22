@@ -1,0 +1,85 @@
+[0.000000] (-) TimerEvent: {}
+[0.000643] (my_testingpkg) JobQueued: {'identifier': 'my_testingpkg', 'dependencies': OrderedDict([('my_testingpkg', '/home/user/ros2_ws/src/my_testingpkg/install/my_testingpkg')])}
+[0.000773] (my_testingpkg) JobStarted: {'identifier': 'my_testingpkg'}
+[0.098815] (-) TimerEvent: {}
+[0.199078] (-) TimerEvent: {}
+[0.267796] (my_testingpkg) Command: {'cmd': ['/usr/bin/python3', '-m', 'pytest'], 'cwd': '/home/user/ros2_ws/src/my_testingpkg', 'env': {'ROS_VERSION': '2', 'NVIDIA_VISIBLE_DEVICES': 'all', 'GAZEBO_MASTER_URI': 'http://1_xterm:11345', 'ROS_PYTHON_VERSION': '3', 'HOSTNAME': '1_xterm', 'ROBOT_HOSTNAME': '', 'PWD': '/home/user/ros2_ws/src/my_testingpkg/build/my_testingpkg', 'PORT': '4000', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'ROS_IP': '', 'HOME': '/home/user', 'GAZEBO_PLUGIN_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'LANG': 'en_US.UTF-8', 'GAZEBO_MODEL_DATABASE_URI': 'http://models.gazebosim.org', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/user/ros2_ws/install/py_srvcli:/home/user/ros2_ws/install/my_testingpkg:/opt/ros/humble:/home/simulations/ros2_sims_ws/install/robot_description:/home/simulations/ros2_sims_ws/install/robot_description', 'GAZEBO_RESOURCE_PATH': '/usr/share/gazebo-11:/usr/share/gazebo-11:/usr/share/gazebo', 'COLCON_PREFIX_PATH': '/home/simulations/ros2_sims_ws/install:/home/user/ros2_ws/install', 'GAZEBO_MASTER_PORT': '11345', 'NVM_DIR': '/usr/local/share/shell/.nvm', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PYTHONPATH': '/home/user/ros2_ws/install/py_srvcli/lib/python3.10/site-packages:/home/user/ros2_ws/install/my_testingpkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/home/simulations/public_sim_ws/src/all/ros_basics_examples/python_course_class:/home/simulations/public_sim_ws/src/ros_basics_examples/python_course_class:/home/simulations/public_sim_ws/src/all/kinematics_course_utils/kinematics', 'COLCON': '1', 'TERM': 'xterm-color', 'ROBOT_DESCRIPTION_PATH': '/home/simulations/ros2_sims_ws/install/robot_description', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SNAPCRAFT_BUILD_ENVIRONMENT': 'host', 'GAZEBO_MASTER_HOSTNAME': '1_xterm', 'DISPLAY': ':1', 'SHLVL': '2', 'NVM_CD_FLAGS': '', 'ROS_MASTER_URI': 'http://1_simulation:11311', 'ROS_HOSTNAME': '1_xterm', 'LD_LIBRARY_PATH': '/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-10.2/lib64:/home/user/.catkin_ws_python3/src/TensorRT-7.0.0.11/lib::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:', 'ROS_LOCALHOST_ONLY': '0', 'SLOT_SHELL_START_ID': '1025514', 'SLOT_PREFIX': 'dff66dcb-ab6d-46ad-b0db-87bb32c30342', 'LC_ALL': 'C', 'SOURCE_ROS1_WS': '', 'GAZEBO_MODEL_PATH': '/usr/share/gazebo-11/models:/usr/share/gazebo-11/models:/usr/share/gazebo-9/models:/usr/share/gazebo/models_robox', 'SLOT_JENKINS_PORT': '25117', 'SLOT_SYSTEMD': 'False', 'PATH': '/opt/ros/humble/bin:/usr/local/share/shell/.nvm/versions/node/v8.17.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/user/.cargo/bin:/home/user/.cargo/bin', 'SELECTED_ROS_DISTRO': 'humble', 'NVM_BIN': '/usr/local/share/shell/.nvm/versions/node/v8.17.0/bin', 'NODE_VERSION': 'v8.17.0', 'DEBIAN_FRONTEND': 'noninteractive', 'ROS_DISTRO': 'humble', 'GAZEBO_VERBOSE': '0', 'OGRE_RESOURCE_PATH': '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0', 'OLDPWD': '/home/user/ros2_ws/src/my_testingpkg/test', 'SOURCE_ROS2_WS': 'True', 'SLOT_ROSBRIDGE_PORT': '20001', '_': '/usr/bin/env', 'PYTHONDONTWRITEBYTECODE': '1', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/home/user/ros2_ws/src/my_testingpkg/build/my_testingpkg/pytest.xml --junit-prefix=my_testingpkg -o cache_dir=/home/user/ros2_ws/src/my_testingpkg/build/my_testingpkg/.pytest_cache'}, 'shell': False}
+[0.299168] (-) TimerEvent: {}
+[0.399413] (-) TimerEvent: {}
+[0.499676] (-) TimerEvent: {}
+[0.599950] (-) TimerEvent: {}
+[0.700723] (-) TimerEvent: {}
+[0.801005] (-) TimerEvent: {}
+[0.901272] (-) TimerEvent: {}
+[1.001552] (-) TimerEvent: {}
+[1.101860] (-) TimerEvent: {}
+[1.202135] (-) TimerEvent: {}
+[1.302434] (-) TimerEvent: {}
+[1.402733] (-) TimerEvent: {}
+[1.503023] (-) TimerEvent: {}
+[1.603309] (-) TimerEvent: {}
+[1.703594] (-) TimerEvent: {}
+[1.803874] (-) TimerEvent: {}
+[1.904147] (-) TimerEvent: {}
+[2.004431] (-) TimerEvent: {}
+[2.104716] (-) TimerEvent: {}
+[2.205009] (-) TimerEvent: {}
+[2.305324] (-) TimerEvent: {}
+[2.433592] (-) TimerEvent: {}
+[2.535357] (-) TimerEvent: {}
+[2.635712] (-) TimerEvent: {}
+[2.736067] (-) TimerEvent: {}
+[2.836463] (-) TimerEvent: {}
+[2.936828] (-) TimerEvent: {}
+[3.037682] (-) TimerEvent: {}
+[3.137998] (-) TimerEvent: {}
+[3.238317] (-) TimerEvent: {}
+[3.338613] (-) TimerEvent: {}
+[3.438998] (-) TimerEvent: {}
+[3.539376] (-) TimerEvent: {}
+[3.640292] (-) TimerEvent: {}
+[3.740657] (-) TimerEvent: {}
+[3.841030] (-) TimerEvent: {}
+[3.941382] (-) TimerEvent: {}
+[4.042557] (-) TimerEvent: {}
+[4.142895] (-) TimerEvent: {}
+[4.243242] (-) TimerEvent: {}
+[4.280236] (my_testingpkg) StdoutLine: {'line': b'\x1b[1m============================= test session starts ==============================\x1b[0m\n'}
+[4.280470] (my_testingpkg) StdoutLine: {'line': b'platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0\n'}
+[4.284394] (my_testingpkg) StdoutLine: {'line': b'cachedir: build/my_testingpkg/.pytest_cache\n'}
+[4.284531] (my_testingpkg) StdoutLine: {'line': b'rootdir: /home/user/ros2_ws/src/my_testingpkg\n'}
+[4.284603] (my_testingpkg) StdoutLine: {'line': b'plugins: ament-pep257-0.12.14, ament-xmllint-0.12.14, ament-flake8-0.12.14, ament-copyright-0.12.14, ament-lint-0.12.14, launch-testing-1.0.13, launch-testing-ros-0.19.13, langsmith-0.5.0, anyio-4.12.0, colcon-core-0.20.1\n'}
+[4.343338] (-) TimerEvent: {}
+[4.446797] (-) TimerEvent: {}
+[4.547143] (-) TimerEvent: {}
+[4.589341] (my_testingpkg) StdoutLine: {'line': b'\x1b[1mcollecting ... \x1b[0m\x1b[1m\n'}
+[4.590067] (my_testingpkg) StdoutLine: {'line': b'collected 10 items                                                             \x1b[0m\n'}
+[4.590156] (my_testingpkg) StdoutLine: {'line': b'\n'}
+[4.647250] (-) TimerEvent: {}
+[4.747571] (-) TimerEvent: {}
+[4.765467] (my_testingpkg) StdoutLine: {'line': b'test/test_autocar_node.py \x1b[32m.\x1b[0m\x1b[32m.\x1b[0m\x1b[32m.\x1b[0m\x1b[32m                                            [ 30%]\x1b[0m\n'}
+[4.784231] (my_testingpkg) StdoutLine: {'line': b'test/test_car_node.py \x1b[32m.\x1b[0m\x1b[32m                                                  [ 40%]\x1b[0m\n'}
+[4.785338] (my_testingpkg) StdoutLine: {'line': b'test/test_copyright.py \x1b[33ms\x1b[0m\x1b[32m                                                 [ 50%]\x1b[0m\n'}
+[4.787092] (my_testingpkg) StdoutLine: {'line': b'test/test_mock_bat.py \x1b[32m.\x1b[0m\x1b[32m                                                  [ 60%]\x1b[0m\n'}
+[4.847089] (my_testingpkg) StdoutLine: {'line': b'test/test_nav_status.py \x1b[31mF\x1b[0m\x1b[31m                                                [ 70%]\x1b[0m\n'}
+[4.847648] (-) TimerEvent: {}
+[4.851518] (my_testingpkg) StdoutLine: {'line': b'test/test_status.py \x1b[32m.\x1b[0m\x1b[32m.\x1b[0m\x1b[32m.\x1b[0m\x1b[31m                                                  [100%]\x1b[0m\n'}
+[4.851779] (my_testingpkg) StdoutLine: {'line': b'\n'}
+[4.851960] (my_testingpkg) StdoutLine: {'line': b'=================================== FAILURES ===================================\n'}
+[4.852540] (my_testingpkg) StdoutLine: {'line': b'\x1b[31m\x1b[1m______________________________ test_battery_level ______________________________\x1b[0m\n'}
+[4.852643] (my_testingpkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_nav_status.py\x1b[0m:18: in test_battery_level\n'}
+[4.947773] (-) TimerEvent: {}
+[4.984198] (my_testingpkg) StdoutLine: {'line': b'    result = check_safety(mock_sensor.battery_level , mock_sensor)\n'}
+[4.984446] (my_testingpkg) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_nav_status.py\x1b[0m:8: in check_safety\n'}
+[4.984525] (my_testingpkg) StdoutLine: {'line': b'    \x1b[94mif\x1b[39;49;00m dist < \x1b[94m0.3\x1b[39;49;00m:\n'}
+[4.984608] (my_testingpkg) StdoutLine: {'line': b"\x1b[1m\x1b[31mE   TypeError: '<' not supported between instances of 'MagicMock' and 'float'\x1b[0m\n"}
+[4.984722] (my_testingpkg) StdoutLine: {'line': b'- generated xml file: /home/user/ros2_ws/src/my_testingpkg/build/my_testingpkg/pytest.xml -\n'}
+[4.984789] (my_testingpkg) StdoutLine: {'line': b'=========================== short test summary info ============================\n'}
+[4.984853] (my_testingpkg) StdoutLine: {'line': b"FAILED test/test_nav_status.py::test_battery_level - TypeError: '<' not suppo...\n"}
+[4.984917] (my_testingpkg) StdoutLine: {'line': b'\x1b[31m==================== \x1b[31m\x1b[1m1 failed\x1b[0m, \x1b[32m8 passed\x1b[0m, \x1b[33m1 skipped\x1b[0m\x1b[31m in 0.70s\x1b[0m\x1b[31m ====================\x1b[0m\n'}
+[5.047895] (-) TimerEvent: {}
+[5.148254] (-) TimerEvent: {}
+[5.193295] (my_testingpkg) CommandEnded: {'returncode': 1}
+[5.194030] (my_testingpkg) TestFailure: {'identifier': 'my_testingpkg'}
+[5.194097] (my_testingpkg) JobEnded: {'identifier': 'my_testingpkg', 'rc': 0}
+[5.194544] (-) EventReactorShutdown: {}

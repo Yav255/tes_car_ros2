@@ -1,0 +1,28 @@
+[0.268s] Invoking command in '/home/user/ros2_ws/src/my_testingpkg': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/user/ros2_ws/src/my_testingpkg/build/my_testingpkg/pytest.xml --junit-prefix=my_testingpkg -o cache_dir=/home/user/ros2_ws/src/my_testingpkg/build/my_testingpkg/.pytest_cache PYTHONDONTWRITEBYTECODE=1 _=/usr/bin/env /usr/bin/python3 -m pytest
+[4.280s] [1m============================= test session starts ==============================[0m
+[4.280s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[4.284s] cachedir: build/my_testingpkg/.pytest_cache
+[4.284s] rootdir: /home/user/ros2_ws/src/my_testingpkg
+[4.284s] plugins: ament-pep257-0.12.14, ament-xmllint-0.12.14, ament-flake8-0.12.14, ament-copyright-0.12.14, ament-lint-0.12.14, launch-testing-1.0.13, launch-testing-ros-0.19.13, langsmith-0.5.0, anyio-4.12.0, colcon-core-0.20.1
+[4.589s] [1mcollecting ... [0m[1m
+[4.589s] collected 10 items                                                             [0m
+[4.589s] 
+[4.769s] test/test_autocar_node.py [32m.[0m[32m.[0m[32m.[0m[32m                                            [ 30%][0m
+[4.784s] test/test_car_node.py [32m.[0m[32m                                                  [ 40%][0m
+[4.785s] test/test_copyright.py [33ms[0m[32m                                                 [ 50%][0m
+[4.786s] test/test_mock_bat.py [32m.[0m[32m                                                  [ 60%][0m
+[4.846s] test/test_nav_status.py [31mF[0m[31m                                                [ 70%][0m
+[4.851s] test/test_status.py [32m.[0m[32m.[0m[32m.[0m[31m                                                  [100%][0m
+[4.851s] 
+[4.852s] =================================== FAILURES ===================================
+[4.852s] [31m[1m______________________________ test_battery_level ______________________________[0m
+[4.852s] [1m[31mtest/test_nav_status.py[0m:18: in test_battery_level
+[4.984s]     result = check_safety(mock_sensor.battery_level , mock_sensor)
+[4.984s] [1m[31mtest/test_nav_status.py[0m:8: in check_safety
+[4.984s]     [94mif[39;49;00m dist < [94m0.3[39;49;00m:
+[4.984s] [1m[31mE   TypeError: '<' not supported between instances of 'MagicMock' and 'float'[0m
+[4.984s] - generated xml file: /home/user/ros2_ws/src/my_testingpkg/build/my_testingpkg/pytest.xml -
+[4.984s] =========================== short test summary info ============================
+[4.984s] FAILED test/test_nav_status.py::test_battery_level - TypeError: '<' not suppo...
+[4.984s] [31m==================== [31m[1m1 failed[0m, [32m8 passed[0m, [33m1 skipped[0m[31m in 0.70s[0m[31m ====================[0m
+[5.193s] Invoked command in '/home/user/ros2_ws/src/my_testingpkg' returned '1': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/user/ros2_ws/src/my_testingpkg/build/my_testingpkg/pytest.xml --junit-prefix=my_testingpkg -o cache_dir=/home/user/ros2_ws/src/my_testingpkg/build/my_testingpkg/.pytest_cache PYTHONDONTWRITEBYTECODE=1 _=/usr/bin/env /usr/bin/python3 -m pytest

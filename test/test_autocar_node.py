@@ -35,4 +35,4 @@ def test_sensor_speed(ros_context,input_speed,expected_speed):
 
     assert len(received_msgs)> 0 , f"Input speed: {input_speed}"
     assert received_msgs[0].linear.x == expected_speed, \
-         f"Data corruption! Sent {input_speed}, but int excepted {received_messages[0].linear.x}"
+         f"Data corruption! Sent {input_speed}, but int excepted {received_msgs[0].linear.x}"

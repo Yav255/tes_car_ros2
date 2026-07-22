@@ -1,0 +1,19 @@
+[0.282s] Invoking command in '/home/user/ros2_ws/src/my_testingpkg': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/user/ros2_ws/src/my_testingpkg/build/my_testingpkg/pytest.xml --junit-prefix=my_testingpkg -o cache_dir=/home/user/ros2_ws/src/my_testingpkg/build/my_testingpkg/.pytest_cache PYTHONDONTWRITEBYTECODE=1 _=/usr/bin/env /usr/bin/python3 -m pytest
+[1.314s] [1m============================= test session starts ==============================[0m
+[1.314s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[1.319s] cachedir: build/my_testingpkg/.pytest_cache
+[1.320s] rootdir: /home/user/ros2_ws/src/my_testingpkg
+[1.320s] plugins: ament-pep257-0.12.14, ament-xmllint-0.12.14, ament-flake8-0.12.14, ament-copyright-0.12.14, ament-lint-0.12.14, launch-testing-1.0.13, launch-testing-ros-0.19.13, langsmith-0.5.0, anyio-4.12.0, colcon-core-0.20.1
+[1.575s] [1mcollecting ... [0m[1m
+[1.575s] collected 10 items                                                             [0m
+[1.575s] 
+[1.738s] test/test_autocar_node.py [32m.[0m[32m.[0m[32m.[0m[32m                                            [ 30%][0m
+[1.747s] test/test_car_node.py [32m.[0m[32m                                                  [ 40%][0m
+[1.749s] test/test_copyright.py [33ms[0m[32m                                                 [ 50%][0m
+[1.751s] test/test_mock_bat.py [32m.[0m[32m                                                  [ 60%][0m
+[1.753s] test/test_nav_status.py [32m.[0m[32m                                                [ 70%][0m
+[1.757s] test/test_status.py [32m.[0m[32m.[0m[32m.[0m[32m                                                  [100%][0m
+[1.757s] 
+[1.757s] - generated xml file: /home/user/ros2_ws/src/my_testingpkg/build/my_testingpkg/pytest.xml -
+[1.757s] [32m========================= [32m[1m9 passed[0m, [33m1 skipped[0m[32m in 0.44s[0m[32m =========================[0m
+[1.981s] Invoked command in '/home/user/ros2_ws/src/my_testingpkg' returned '0': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/user/ros2_ws/src/my_testingpkg/build/my_testingpkg/pytest.xml --junit-prefix=my_testingpkg -o cache_dir=/home/user/ros2_ws/src/my_testingpkg/build/my_testingpkg/.pytest_cache PYTHONDONTWRITEBYTECODE=1 _=/usr/bin/env /usr/bin/python3 -m pytest

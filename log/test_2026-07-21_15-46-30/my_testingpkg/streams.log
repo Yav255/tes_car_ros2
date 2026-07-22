@@ -1,0 +1,28 @@
+[0.286s] Invoking command in '/home/user/ros2_ws/src/my_testingpkg': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/user/ros2_ws/src/my_testingpkg/build/my_testingpkg/pytest.xml --junit-prefix=my_testingpkg -o cache_dir=/home/user/ros2_ws/src/my_testingpkg/build/my_testingpkg/.pytest_cache PYTHONDONTWRITEBYTECODE=1 _=/usr/bin/env /usr/bin/python3 -m pytest
+[1.322s] [1m============================= test session starts ==============================[0m
+[1.322s] platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0
+[1.328s] cachedir: build/my_testingpkg/.pytest_cache
+[1.328s] rootdir: /home/user/ros2_ws/src/my_testingpkg
+[1.329s] plugins: ament-pep257-0.12.14, ament-xmllint-0.12.14, ament-flake8-0.12.14, ament-copyright-0.12.14, ament-lint-0.12.14, launch-testing-1.0.13, launch-testing-ros-0.19.13, langsmith-0.5.0, anyio-4.12.0, colcon-core-0.20.1
+[1.571s] [1mcollecting ... [0m[1m
+[1.571s] collected 10 items                                                             [0m
+[1.571s] 
+[1.745s] test/test_autocar_node.py [32m.[0m[32m.[0m[32m.[0m[32m                                            [ 30%][0m
+[1.766s] test/test_car_node.py [32m.[0m[32m                                                  [ 40%][0m
+[1.767s] test/test_copyright.py [33ms[0m[32m                                                 [ 50%][0m
+[1.769s] test/test_mock_bat.py [32m.[0m[32m                                                  [ 60%][0m
+[1.832s] test/test_nav_status.py [31mF[0m[31m                                                [ 70%][0m
+[1.835s] test/test_status.py [32m.[0m[32m.[0m[32m.[0m[31m                                                  [100%][0m
+[1.835s] 
+[1.835s] =================================== FAILURES ===================================
+[1.835s] [31m[1m______________________________ test_battery_level ______________________________[0m
+[1.835s] [1m[31mtest/test_nav_status.py[0m:20: in test_battery_level
+[1.876s]     result = check_safety(battery_level , mock_sensor)
+[1.876s] [1m[31mtest/test_nav_status.py[0m:6: in check_safety
+[1.876s]     dist = range_sensor.get_min_distance()
+[1.876s] [1m[31mE   TypeError: 'float' object is not callable[0m
+[1.876s] - generated xml file: /home/user/ros2_ws/src/my_testingpkg/build/my_testingpkg/pytest.xml -
+[1.876s] =========================== short test summary info ============================
+[1.876s] FAILED test/test_nav_status.py::test_battery_level - TypeError: 'float' objec...
+[1.876s] [31m==================== [31m[1m1 failed[0m, [32m8 passed[0m, [33m1 skipped[0m[31m in 0.55s[0m[31m ====================[0m
+[2.197s] Invoked command in '/home/user/ros2_ws/src/my_testingpkg' returned '1': PYTEST_ADDOPTS=--tb=short --junit-xml=/home/user/ros2_ws/src/my_testingpkg/build/my_testingpkg/pytest.xml --junit-prefix=my_testingpkg -o cache_dir=/home/user/ros2_ws/src/my_testingpkg/build/my_testingpkg/.pytest_cache PYTHONDONTWRITEBYTECODE=1 _=/usr/bin/env /usr/bin/python3 -m pytest
