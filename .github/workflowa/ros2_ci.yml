@@ -1,0 +1,33 @@
+me: ROS 2 Testing CI Pipeline
+
+on:
+    push:
+          branches: [ "main" ]
+              pull_request:
+                    branches: [ "main" ]
+
+                    jobs:
+                        build-and-test:
+                              runs-on: ubuntu-latest
+
+                                    container:
+                                            image: ros:humble-ros-base-jammy
+
+                                                  steps:
+                                                          - name: Checkout Repository
+                                                                    uses: actions/checkout@v4
+
+                                                                            - name: Install Testing Dependencies
+                                                                                      run: |
+                                                                                                  apt-get update && apt-get install -y python3-pytest python3-colcon-common-extensions
+
+                                                                                                        - name: Build ROS 2 Package
+                                                                                                                  run: |
+                                                                                                                              . /opt/ros/humble/setup.sh
+                                                                                                                                        colcon build --packages-select my_testingpkg
+
+                                                                                                                                              - name: Run Pytest & ROS 2 Tests
+                                                                                                                                                        run: |
+                                                                                                                                                                    . /opt/ros/humble/setup.sh
+                                                                                                                                                                              colcon test --packages-select my_testingpkg
+                                                                                                                                                                                        colcon test-result --verbose
