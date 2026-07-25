@@ -20,13 +20,15 @@ jobs:
       - name: Install Testing Dependencies
         run: |
           apt-get update && apt-get install -y python3-pytest python3-colcon-common-extensions
-
+          \ros-humble-demo-nodes-cpp
       - name: Build ROS 2 Package
         run: |
           . /opt/ros/humble/setup.sh
           colcon build --packages-select my_testingpkg
 
       - name: Run Pytest & ROS 2 Tests
+        env:
+          ROS_LOCALHOST_ONLY : 1
         run: |
           . /opt/ros/humble/setup.sh
           colcon test --packages-select my_testingpkg
