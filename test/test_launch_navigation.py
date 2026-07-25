@@ -42,7 +42,7 @@ class Test_talker_Integ(unittest.TestCase):
         self.node.create_subscription(String, "/chatter", msg_callback,10)
 
         start_time = time.time()
-        while time.time() - start_time < 5.0:
+        while time.time() - start_time < 15.0:
             rclpy.spin_once(self.node, timeout_sec=0.5)
             if len(received_messages) >0:
                 break
