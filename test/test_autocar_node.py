@@ -10,7 +10,8 @@ def ros_context():
     if rclpy.ok():
         rclpy.shutdown()
 
-@pytest.mark.parametrize("input_speed, expected_speed" , [ (1.0,1.0) ,(-0.5,-.5), (0.0 , 0.0)])
+@pytest.mark.parametrize("input_speed, expected_speed" , 
+[ (1.0,1.0) ,(-0.5,-.5), (0.0 , 0.0)])
 def test_sensor_speed(ros_context,input_speed,expected_speed):
     test_node  = rclpy.create_node("qa_matrix_test")
 

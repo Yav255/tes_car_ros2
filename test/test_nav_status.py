@@ -1,5 +1,6 @@
 import pytest
 from unittest.mock import MagicMock
+
 def check_safety(battery_level,range_sensor):
     if battery_level < 15 :
         return "LOW_BATTERY"

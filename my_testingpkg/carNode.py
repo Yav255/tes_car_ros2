@@ -1,6 +1,6 @@
 import rclpy
 from rclpy.node import Node
-# We import geometry_msgs to control the robot's wheels (linear/angular speed)
+
 from geometry_msgs.msg import Twist 
 
 # 1. Your class inherits from "Node" instead of just being a standalone class
