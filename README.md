@@ -1,5 +1,5 @@
-This is a testing repository
-it contains nodes of publishers and subscribers connecting to a single topic 
-Testing file for those nodes are in the test folder
-Automated workflow with Github Actions 
-Continuing the process to services (Server /client )
+ -->This is a testing repository
+ -->It contains nodes of publishers and subscribers connecting to a single topic 
+-->Testing file for those nodes are in the test folder
+--> Automated workflow with Github Actions 
+--->Continuing the process to services (Server /client )
